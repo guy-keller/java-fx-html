@@ -71,4 +71,6 @@ my.sample.app.guice.main.GuiceAppMain
 ```
 Samples are under: src/test/java
 
-MIT
+![JavaFX HTML CSS JS](https://raw.githubusercontent.com/guikeller/blob/master/java-fx-html.png)
+
+License MIT
