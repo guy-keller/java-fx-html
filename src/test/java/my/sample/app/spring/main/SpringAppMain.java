@@ -16,7 +16,7 @@ public class SpringAppMain extends Application {
     public void start(Stage stage) throws Exception {
         Parent root = FXMLLoader.load(SpringAppMain.class.getResource("/SpringAppUI.fxml"));
         Scene scene = new Scene(root);
-        stage.setTitle("Sample JavaFX with HTML CSS JS");
+        stage.setTitle("Sample JavaFX with Spring HTML CSS JS");
         stage.setScene(scene);
         stage.show();
     }
