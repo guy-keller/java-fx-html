@@ -57,6 +57,21 @@ function submitValues() {
  * IntegerConverter
  * StringConverter (default) 
  
+#### Using as a Maven dependency
+Download the latest jar from the latest release tag and install into your local repo by using the following command:
+```shell
+mvn install:install-file -Dfile=java-fx-html-0.0.1.jar -DgroupId=com.github.guikeller -DartifactId=java-fx-html -Dversion=0.0.1 -Dpackaging=jar
+```
+Alternatively install on your own managed repo - eg: Nexus, Artifactory, etc.. (company wide)<br>
+Use it as dependency on your POM file - follows example below:
+```xml
+<dependency>
+    <groupId>com.github.guikeller</groupId>
+    <artifactId>java-fx-html</artifactId>
+    <version>0.0.1</version>
+</dependency>
+```
+
 #### Running a Sample app:
 
 Checkout the project
@@ -69,8 +84,17 @@ my.sample.app.core.main.CoreAppMain
 my.sample.app.spring.main.SpringAppMain
 my.sample.app.guice.main.GuiceAppMain
 ```
-Samples are under: src/test/java
+Code samples are under: src/test/java
 
+#### Screenshot
+Yes, it does not look pretty; a PR with some amazing styling is more than welcome.
 ![JavaFX HTML CSS JS](https://raw.githubusercontent.com/guikeller/blob/master/java-fx-html.png)
+Just think of the potential and possibilities..
 
+#### Further info
+* JavaFX + HTML + CSS + JS = View
+* Java 8 and/or above = Controller
+* Java 8 and/or above = Model
+
+Pull Requests are more than welcome!
 License MIT
