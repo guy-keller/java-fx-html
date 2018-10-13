@@ -33,6 +33,7 @@ public class HtmlPopulator {
     protected Method findInitFxHtmlMethod(Method[] methods) {
         for (Method method : methods) {
             if (method.isAnnotationPresent(FxHtmlInitMethod.class)) {
+                method.setAccessible(true);
                 return method;
             }
         }
