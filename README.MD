@@ -60,7 +60,7 @@ function submitValues() {
 #### Using as a Maven dependency
 Download the latest jar from the latest release tag and install into your local repo by using the following command:
 ```shell
-mvn install:install-file -Dfile=java-fx-html-0.0.2.jar -DgroupId=com.github.guikeller -DartifactId=java-fx-html -Dversion=0.0.1 -Dpackaging=jar
+mvn install:install-file -Dfile=java-fx-html-0.0.2.jar -DgroupId=com.github.guikeller -DartifactId=java-fx-html -Dversion=0.0.2 -Dpackaging=jar
 ```
 Alternatively install on your own managed repo - eg: Nexus, Artifactory, etc.. (company wide)<br>
 Use it as dependency on your POM file - follows example below:
