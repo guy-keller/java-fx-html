@@ -68,7 +68,7 @@ Use it as dependency on your POM file - follows example below:
 <dependency>
     <groupId>com.github.guikeller</groupId>
     <artifactId>java-fx-html</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2</version>
 </dependency>
 ```
 
@@ -92,9 +92,13 @@ Yes, it does not look pretty; a PR with some amazing styling is more than welcom
 Just think of the potential and possibilities..
 
 #### Further info
+* Disclaimer - Limitations:
+1. All @FxController methods must have only one param: the "Model"
+2. It does not support composition / aggregation for Model classes
+
 * JavaFX + HTML + CSS + JS = View
 * Java 8 and/or above = Controller
 * Java 8 and/or above = Model
 
-Pull Requests are more than welcome!
+Pull Requests are more than welcome!<br>
 License MIT
