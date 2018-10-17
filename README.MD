@@ -32,12 +32,23 @@ this.fxHtml.registerFxHtml("javaFxHtml");
 ```
 
 On your HTML
-```javascript
-function submitValues() {
-    /* MyController#saveUserInfo(UserInfoModel) is invoked with the 'Model' automagically populated */
-    var result = javaFxHtml.invokeController("com.app.controller.MyController", "saveUserInfo");
-    console.log("Java Returned: " + result);
-}
+```html
+<html>
+    <body>
+        <form id="notNecessary" action="#">
+            <input type="text" id="name" value="">
+            <input type="number" id="age" value="">
+            <button onclick="submitValues()">Save</button>
+        </form>
+    </body>
+    <script type="application/javascript">
+        function submitValues() {
+            /* MyController#saveUserInfo(UserInfoModel) is invoked with the 'Model' automagically populated */
+            var result = javaFxHtml.invokeController("com.app.controller.MyController", "saveUserInfo");
+            console.log("Java Returned: " + result);
+        }
+    </script>
+</html>
 ```
 
 Controller:
@@ -46,7 +57,7 @@ public class MyController{
    @FxControllerMethod
    public String saveUserInfo(UserModel user) {
        System.out.println("NAME: " + model.getName());
-       System.out.println("AGE: " + model.getValue());
+       System.out.println("AGE: " + model.getAge());
        // Think of the possibilities with JSON / Jackson
        return "{\"result\": \"success\", \"timestamp\": \"" + Instant.now() + "\"}";
    }
