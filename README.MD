@@ -68,7 +68,7 @@ Model:
 ```java
 @Data // Project Lombok
 public class UserModel {
-
+    // You can also create your own converter by implementing the Converter interface
     @FxHtmlField(elementId = "age", converter = IntegerConverter.class)
     private Integer age;
 
