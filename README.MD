@@ -86,9 +86,10 @@ my.sample.app.guice.main.GuiceAppMain
 ```
 Code samples are under: src/test/java
 
-#### Screenshot
-Yes, it does not look pretty; a PR with some amazing styling is more than welcome.
-![JavaFX HTML CSS JS](https://raw.githubusercontent.com/guikeller/blob/master/java-fx-html.png)
+#### Screenshots
+![JavaFX HTML CSS JS PRETTY](https://raw.githubusercontent.com/guikeller/blob/master/java-fx-html-sample2.png)
+
+![JavaFX HTML CSS JS FIREBUG](https://raw.githubusercontent.com/guikeller/blob/master/java-fx-html-sample.png)
 Just think of the potential and possibilities..
 
 #### Further info
