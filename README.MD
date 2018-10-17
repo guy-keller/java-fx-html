@@ -40,6 +40,33 @@ function submitValues() {
 }
 ```
 
+Controller:
+```java
+public class MyController{
+   @FxControllerMethod
+   public String saveUserInfo(UserModel user) {
+       System.out.println("NAME: " + model.getName());
+       System.out.println("AGE: " + model.getValue());
+       // Think of the possibilities with JSON / Jackson
+       return "{\"result\": \"success\", \"timestamp\": \"" + Instant.now() + "\"}";
+   }
+}
+```
+
+Model:
+```java
+@Data // Project Lombok
+public class UserModel {
+
+    @FxHtmlField(elementId = "age", converter = IntegerConverter.class)
+    private Integer age;
+
+    @FxHtmlField(elementId = "name")
+    private String name;
+
+}
+```
+
 #### Main Classes (com.github.guikeller.javafxhtml) [entry points]:
  * CoreJavaFxHtml
  * SpringJavaFxHtml
